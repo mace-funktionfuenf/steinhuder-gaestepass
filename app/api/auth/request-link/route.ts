@@ -1,5 +1,5 @@
 import { NextRequest } from "next/server";
-import { createMagicToken } from "@/lib/authTokens";
+import { createMagicToken } from "@/app/lib/authTokens";
 
 export async function POST(req: NextRequest) {
   const formData = await req.formData();

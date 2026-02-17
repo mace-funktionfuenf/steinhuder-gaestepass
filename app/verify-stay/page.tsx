@@ -3,11 +3,14 @@ export default function VerifyStayPage() {
     <main style={{ padding: 24, fontFamily: "system-ui", maxWidth: 520 }}>
       <h1 style={{ fontSize: 24, fontWeight: 700 }}>Aufenthalt bestätigen</h1>
       <p style={{ marginTop: 8 }}>
-        Als Nächstes prüfen wir Zimmernummer + Nachname (und später Check-in/out).
+        Als Nächstes prüfen wir Zimmernummer + Nachname (und später
+        Check-in/out).
       </p>
 
       <form style={{ marginTop: 16 }}>
-        <label style={{ display: "block", fontWeight: 600 }}>Zimmernummer</label>
+        <label style={{ display: "block", fontWeight: 600 }}>
+          Zimmernummer
+        </label>
         <input
           name="room"
           placeholder="z.B. 204"
@@ -47,6 +50,12 @@ export default function VerifyStayPage() {
           }}
         >
           Bestätigen (kommt als nächstes)
+        </button>
+        <button
+          type="submit"
+          style={{ padding: "10px 14px", borderRadius: 10 }}
+        >
+          Logout
         </button>
       </form>
     </main>
